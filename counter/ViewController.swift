@@ -21,12 +21,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         counter.text = String(counters)
         TextLable.text = "История изменений:"
-        
     }
     @IBAction func ButtonMinusAction(_ sender: Any) {
         if counters == 0 {
             counter.text = String(counters)
-            TextLable.text = " "
+            TextLable.text = ""
             textsLable.append("\n попытка уменьшить значение счётчика ниже 0")
             TextLable.text = textsLable
         } else {
