@@ -7,15 +7,17 @@
 
 import UIKit
 
-var counters: Int = 0
-var textsLable: String = ""
 
 class ViewController: UIViewController {
+    
+    var counters: Int = 0
+    var textsLable: String = ""
 
     @IBOutlet weak var TextLable: UITextView!//истоия изменений
     @IBOutlet weak var ButtonMinus: UIButton!//кнопка уменьшения
     @IBOutlet weak var ButtonPlus: UIButton!//кнопка увеличения
     @IBOutlet weak var counter: UILabel! // вывод счетчика
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
